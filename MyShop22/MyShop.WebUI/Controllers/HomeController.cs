@@ -17,11 +17,13 @@ namespace MyShop.WebUI.Controllers
         // GET: Products
         public ActionResult Index()
         {
+            var products = db.Products.ToList();
+
             return View(db.Products.ToList());
         }
 
 
-        public ActionResult Details(string Id)
+        public ActionResult Details(int Id)
         {
             Product product = db.Products.Find(Id);
             

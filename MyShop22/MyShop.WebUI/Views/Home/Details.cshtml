@@ -1,28 +1,19 @@
 ﻿@model MyShop.Core.Models.Product
 
 @{
-    ViewBag.Title = Model.Name + "Details";
+    ViewBag.Title = Model.Description + "Details";
 }
 
-<h2>@Html.DisplayFor(model=>model.Name)</h2>
+<h2>@Html.DisplayFor(model=>model.Description)</h2>
 
 <div>
     <div class="col-md-2">
-        <img class="img-responsive" src="~/Content/ProductImage/@Model.Image" />
-
+        <img class="img-responsive" src="~/Content/ProductsImages/@Model.Image" />
     </div>
 
     <div class="col-md-10">
 
         <dl class="dl-horizontal">
-
-            <dt>
-                @Html.DisplayNameFor(model => model.Description)
-            </dt>
-
-            <dd>
-                @Html.DisplayFor(model => model.Description)
-            </dd>
 
             <dt>
                 $@Html.DisplayNameFor(model => model.Price)
