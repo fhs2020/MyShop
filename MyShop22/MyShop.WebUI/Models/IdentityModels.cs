@@ -33,5 +33,9 @@ namespace MyShop.WebUI.Models
         public System.Data.Entity.DbSet<MyShop.Core.Models.Product> Products { get; set; }
 
         public System.Data.Entity.DbSet<MyShop.Core.Models.ProductCategory> ProductCategories { get; set; }
+
+        public System.Data.Entity.DbSet<MyShop.Core.Models.Basket> Baskets { get; set; }
+
+        public System.Data.Entity.DbSet<MyShop.Core.Models.BasketItem> BasketItems { get; set; }
     }
 }
