@@ -48,7 +48,7 @@ namespace MyShop.DataAccess.InMemory
             }
         }
 
-        public ProductCategory Find(string Id)
+        public ProductCategory Find(int Id)
         {
             ProductCategory category = categories.Find(p => p.Id == Id);
 
@@ -68,7 +68,7 @@ namespace MyShop.DataAccess.InMemory
         }
 
 
-        public void Delete(string Id)
+        public void Delete(int Id)
         {
             ProductCategory categoryToDelete = categories.Find(p => p.Id == Id);
 

@@ -12,12 +12,11 @@ namespace MyShop.DataAccess.SQL
     {
         public DataContext() : base("DefaultConnection")
         {
-
         } 
-
 
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductCategory> Categories { get; set; }
 
+        public System.Data.Entity.DbSet<MyShop.Core.Models.BaseEntity> BaseEntities { get; set; }
     }
 }

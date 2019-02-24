@@ -1,11 +1,10 @@
 using MyShop.Core.Contracts;
 using MyShop.Core.Models;
-using MyShop.DataAccess.InMemory;
 using System;
-
+using MyShop.DataAccess.InMemory;
 using Unity;
 
-namespace MyShop.WebUI
+namespace MyShop.DataAccess.InMemory
 {
     /// <summary>
     /// Specifies the Unity configuration for the main container.

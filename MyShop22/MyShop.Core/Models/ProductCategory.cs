@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace MyShop.Core.Models
 {
-    public class ProductCategory : BaseEntity
+    public class ProductCategory  
     {
-       
+
+        public int Id { get; set; }
         public string Category { get; set; }
 
  
